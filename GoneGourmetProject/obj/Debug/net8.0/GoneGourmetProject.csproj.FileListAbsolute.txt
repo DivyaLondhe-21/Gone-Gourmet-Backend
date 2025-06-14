@@ -169,4 +169,5 @@ C:\Users\DRAJESHL\source\repos\GoneGourmetProject\GoneGourmetProject\obj\Debug\n
 C:\Users\DRAJESHL\source\repos\GoneGourmetProject\GoneGourmetProject\obj\Debug\net8.0\GoneGourmetProject.pdb
 C:\Users\DRAJESHL\source\repos\GoneGourmetProject\GoneGourmetProject\obj\Debug\net8.0\GoneGourmetProject.genruntimeconfig.cache
 C:\Users\DRAJESHL\source\repos\GoneGourmetProject\GoneGourmetProject\obj\Debug\net8.0\ref\GoneGourmetProject.dll
+C:\Users\DRAJESHL\source\repos\GoneGourmetProject\GoneGourmetProject\obj\Debug\net8.0\GoneGourmetProject.sourcelink.json
 C:\Users\DRAJESHL\source\repos\GoneGourmetProject\GoneGourmetProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

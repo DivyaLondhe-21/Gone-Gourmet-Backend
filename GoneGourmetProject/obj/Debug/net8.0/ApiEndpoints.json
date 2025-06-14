@@ -1,23 +1,29 @@
 [
   {
     "ContainingType": "GoneGourmetProject.Controllers.UnavailableItemsController",
-    "Method": "GetRestaurantBrands",
+    "Method": "GetBrands",
     "RelativePath": "api/UnavailableItems/brands",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GoneGourmetProject.Controllers.UnavailableItemsController",
+    "Method": "GetCities",
+    "RelativePath": "api/UnavailableItems/cities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "brandName",
+        "Type": "System.String",
+        "IsRequired": false
       }
-    ]
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GoneGourmetProject.Controllers.UnavailableItemsController",
@@ -28,30 +34,19 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "GoneGourmetProject.Models.UnavailableItemsRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "GoneGourmetProject.Controllers.UnavailableItemsController",
-    "Method": "GetLocations",
-    "RelativePath": "api/UnavailableItems/locations",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
         "Name": "restaurantBrand",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "location",
         "Type": "System.String",
         "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Collections.Generic.List\u00601[[GoneGourmetProject.Models.UnavailableItem, GoneGourmetProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -62,24 +57,24 @@
     ]
   },
   {
-    "ContainingType": "GoneGourmetProject.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "GoneGourmetProject.Controllers.UnavailableItemsController",
+    "Method": "GetUnavailableItemsForBrandAndCity",
+    "RelativePath": "api/UnavailableItems/unavailable-items",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[GoneGourmetProject.WeatherForecast, GoneGourmetProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "brandName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
   }
 ]

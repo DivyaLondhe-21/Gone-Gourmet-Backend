@@ -6,7 +6,7 @@ namespace GoneGourmetProject.Services
 {
     public interface IUnavailableItemsService
     {
-        Task<List<UnavailableItem>> GetUnavailableItemsAsync(string brand, List<string> locations);
+        Task<List<UnavailableItem>> GetUnavailableItemsAsync(string restaurantBrand, string location);
         Task<List<string>> GetRestaurantBrandsAsync();
         Task<List<string>> GetLocationsByBrandAsync(string restaurantBrand);
     }

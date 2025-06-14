@@ -5,12 +5,12 @@ namespace GoneGourmetProject.Models
     public class UnavailableItem
     {
         [Key]
-        public int ItemId { get; set; } //primary key
+        public int Id { get; set; }
         public string ItemName { get; set; }
         public string Reason { get; set; }
 
-        public int LocationId { get; set; } //foreign key
-        public Location Location { get; set; }
+        public string RestaurantBrand { get; set; } 
+        public string Location { get; set; }
 
     }
 }
